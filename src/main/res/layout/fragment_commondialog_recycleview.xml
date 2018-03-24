@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutContent" android:paddingLeft="32dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="此账号当前获得的荣誉信息如下，点击可更改" />
+        <android.support.v7.widget.RecyclerView android:id="@+id/listView1" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

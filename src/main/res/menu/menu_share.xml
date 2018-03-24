@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_share_recent" android:title="最近联系人" app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_share_class" android:title="班级成员" app:showAsAction="ifRoom" />
+</menu>

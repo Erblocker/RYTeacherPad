@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="1dp" />
+            <gradient android:startColor="@color/ux_color_toolbar_border_line" android:endColor="@color/ux_color_toolbar_border_line" android:angle="270.0" android:centerY="0.75" android:centerColor="@color/ux_color_toolbar_border_line" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="1dp" />
+                <gradient android:startColor="@color/ux_text_color_button_pressed" android:endColor="@color/ux_text_color_button_pressed" android:angle="270.0" android:centerY="0.75" android:centerColor="@color/ux_text_color_button_pressed" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="1dp" />
+                <gradient android:startColor="@color/ux_text_color_button_colour" android:endColor="@color/ux_text_color_button_colour" android:angle="270.0" android:centerY="0.75" android:centerColor="@color/ux_text_color_button_colour" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

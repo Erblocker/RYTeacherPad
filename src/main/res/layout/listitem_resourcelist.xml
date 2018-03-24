@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netspace.library.ui.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/RelativeLayout3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/kpParent" android:paddingTop="3dp" android:paddingRight="16dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ImageViewFileType" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_word" />
+            <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/TextTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="MyTest" android:maxLines="1" android:singleLine="true" android:layout_weight="0.9" />
+            <ImageView android:id="@+id/ImageViewFav" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_star_light" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textViewTip" android:background="@drawable/badge_ifaux" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50dp" android:text="678" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.8" />
+    </RelativeLayout>
+</com.netspace.library.ui.CheckableFrameLayout>

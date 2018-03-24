@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.1">
+        <ListView android:id="@+id/listView1" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_centerInParent="true">
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="32dp" android:maxHeight="32dp" android:minWidth="32dp" android:minHeight="32dp" />
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewLoadProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载数据..." />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/buttonImport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="导入系统中的默认奖励" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+</LinearLayout>

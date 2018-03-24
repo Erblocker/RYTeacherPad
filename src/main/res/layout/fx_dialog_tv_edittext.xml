@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:background="@drawable/dialog_radian" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.foxit.uiextensions.utils.UIMarqueeTextView android:textSize="@dimen/ux_text_height_title" android:id="@+id/fx_dialog_title" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@style/fx_dialog_text_edit_title_style" />
+    <View android:background="@color/ux_bg_color_toolbar_colour" android:layout_width="match_parent" android:layout_height="1.5dp" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <TextView android:textSize="@dimen/ux_text_height_subhead" android:textColor="@color/ux_color_black" android:gravity="left" android:id="@+id/fx_dialog_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="3dp" />
+        <EditText android:textSize="@dimen/ux_text_height_subhead" android:id="@+id/fx_dialog_edittext" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:hint="" />
+    </LinearLayout>
+    <View android:background="@color/ux_color_dialog_cutting_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/ux_text_height_menu" android:textColor="@color/black" android:id="@+id/fx_dialog_cancel" android:background="@drawable/dialog_button_background_selector" android:layout_width="0dp" android:layout_height="@dimen/ux_dialog_button_height" android:text="@string/fx_string_cancel" android:layout_weight="1.0" />
+        <View android:id="@+id/fx_dialog_button_cutting_line" android:background="@color/ux_color_dialog_cutting_line" android:layout_width="1px" android:layout_height="match_parent" />
+        <Button android:textSize="@dimen/ux_text_height_menu" android:textColor="@color/black" android:id="@+id/fx_dialog_ok" android:background="@drawable/dialog_button_background_selector" android:layout_width="0dp" android:layout_height="@dimen/ux_dialog_button_height" android:text="@string/fx_string_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

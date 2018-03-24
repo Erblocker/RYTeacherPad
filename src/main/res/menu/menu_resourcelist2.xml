@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:icon="@drawable/ic_done_white_24dp" android:id="@+id/buttonCamera" android:title=" 拍照" app:showAsAction="never|always|withText" />
+    <item android:icon="@drawable/ic_done_white_24dp" android:id="@+id/buttonBlank" android:title=" 白板" app:showAsAction="never|always|withText">
+        <menu />
+    </item>
+</menu>

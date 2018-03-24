@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/panel_bookmark_content_root" android:background="@color/ux_text_color_title_light" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/panel_content_framelayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/panel_bookmark_lv" android:visibility="visible" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@color/ux_color_seperator_gray" android:dividerHeight="1px" android:fastScrollEnabled="false" />
+        <TextView android:textSize="@dimen/ux_text_height_subhead" android:textColor="@color/ux_color_black" android:layout_gravity="center" android:id="@+id/panel_nobookmark_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rv_panel_readingbookmark_tips_noinfo" />
+    </FrameLayout>
+</RelativeLayout>

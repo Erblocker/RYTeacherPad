@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imageThumbnail" android:layout_width="500dp" android:layout_height="300dp" android:layout_marginTop="20dp" android:src="@drawable/ic_placehold" />
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewIndex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="第1页" />
+</LinearLayout>

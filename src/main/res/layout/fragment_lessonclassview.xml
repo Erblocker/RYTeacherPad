@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="录课筛选" />
+            <Spinner android:layout_gravity="fill_horizontal" android:id="@+id/spinnerSubject" android:layout_width="150dp" android:layout_height="wrap_content" />
+            <Spinner android:layout_gravity="fill_horizontal" android:id="@+id/spinnerTime" android:layout_width="180dp" android:layout_height="wrap_content" />
+            <Spinner android:layout_gravity="fill_horizontal" android:id="@+id/spinnerTeacher" android:layout_width="150dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recentView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.1" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewNoData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="目前没有符合要求的课堂实录数据，请修改筛选条件" android:layout_centerInParent="true" />
+</RelativeLayout>

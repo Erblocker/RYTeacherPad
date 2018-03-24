@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:shape="rectangle">
+    <gradient android:startColor="#9fb5fe" android:endColor="#b9c9fe" android:angle="270.0" />
+</shape>

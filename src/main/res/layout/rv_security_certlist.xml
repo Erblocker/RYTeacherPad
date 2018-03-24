@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/rv_security_certlist" android:background="@color/ux_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@drawable/rv_panel_bkot_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ux_horz_left_margin_phone" android:layout_marginTop="@dimen/ux_horz_left_margin_phone" android:layout_marginBottom="@dimen/ux_horz_left_margin_phone">
+        <TextView android:textSize="@dimen/ux_text_height_menu" android:textColor="@color/ux_text_color_subhead_colour" android:id="@+id/rv_security_certlist_listtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rv_certlist_note" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ListView android:id="@+id/rv_security_certlist_lv" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@color/ux_color_seperator_gray" />
+    </LinearLayout>
+</LinearLayout>

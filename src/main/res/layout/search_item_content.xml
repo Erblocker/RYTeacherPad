@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:id="@+id/rd_search_item_content_ll" android:background="@drawable/panel_bkot_item_bg" android:paddingTop="5dp" android:paddingRight="@dimen/ux_horz_left_margin_phone" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/ux_text_height_body2" android:textColor="@color/ux_text_color_body2_dark" android:id="@+id/search_content_tv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/ux_text_height_body2" android:textColor="@color/ux_text_color_body2_dark" android:id="@+id/search_page_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+    <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:textSize="@dimen/ux_text_height_body2" android:textColor="@color/ux_text_color_body2_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/search_curpage_count" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

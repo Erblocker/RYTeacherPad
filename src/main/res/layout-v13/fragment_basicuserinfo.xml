@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutContent" android:paddingLeft="32dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="left" android:id="@+id/textViewRealName" android:layout_width="100dp" android:layout_height="wrap_content" android:text="用户名" />
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="left" android:id="@+id/textViewUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13901234567" />
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="left" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学号" />
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="left" android:id="@+id/textViewUserID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123456" />
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="left" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="班级" />
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="left" android:id="@+id/textViewClasses" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="高中一年级1班" />
+            </GridLayout>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewTimeInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="此账号创建于2015-1-1，最后登录时间为2016-1-1，最后登录IP为192.168.1.134" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center" android:id="@+id/RelativeLayout1" android:background="#eeffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/playLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/recordLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前没有语音，点击录制开始录音。" />
+        <Button android:id="@+id/buttonRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始录制" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loadingLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/ic_progress_indeterminate_logo" style="?android:attr/progressBarStyleLarge" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息" android:layout_centerInParent="true" />
+</RelativeLayout>

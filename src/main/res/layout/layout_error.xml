@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/background_error" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageViewPictureVote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_alert" />
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold" android:id="@+id/textViewErrorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="很抱歉，出现错误了！" />
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewErrorDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="程序在获取数据时出现错误" />
+        <Button android:textSize="18sp" android:textColor="#ffffffff" android:id="@+id/buttonRetry" android:background="@drawable/button_redbig" android:layout_width="200dp" android:layout_height="wrap_content" android:text="重试" />
+    </LinearLayout>
+</LinearLayout>

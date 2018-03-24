@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/frame3" android:background="@drawable/bg_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/imageViewPrev" android:background="@drawable/background_sqare_popupbutton_selected_with_sqare_border" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_left_light" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_weight="1.0">
+                <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/layoutPlusScore" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView1" android:background="@drawable/background_oval_selected_with_green_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1分" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <HorizontalScrollView android:id="@+id/horizontalScrollView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/layoutMinusScore" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/TextView01" android:background="@drawable/background_oval_selected_with_green_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-100分" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/imageViewCorrect" android:background="@drawable/background_sqare_popupbutton_selected_with_sqare_border" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_resource_correct" />
+                <ImageView android:id="@+id/imageViewHalfCorrect" android:background="@drawable/background_sqare_popupbutton_selected_with_sqare_border" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_resource_halfcorrect" />
+                <ImageView android:id="@+id/imageViewWrong" android:background="@drawable/background_sqare_popupbutton_selected_with_sqare_border" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_resource_wrong" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/imageViewNext" android:background="@drawable/background_sqare_popupbutton_selected_with_sqare_border" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_right_light" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

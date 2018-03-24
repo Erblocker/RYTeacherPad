@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/menuDelete" android:title="删除..." />
+    <item android:id="@+id/menuCopy" android:title="复制文本..." />
+    <item android:id="@+id/menuBlock" android:title="设置作者禁言..." />
+</menu>

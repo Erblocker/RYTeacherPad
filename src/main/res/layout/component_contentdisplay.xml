@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/contentLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/questiontoolsLayout" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="false" />
+    <RelativeLayout android:id="@+id/contentRelativeLayout" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/questiontoolsLayout" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/correctAnswerLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/contentRelativeLayout" android:layout_alignParentLeft="true" />
+    <com.netspace.library.controls.DrawView android:id="@+id/fullQuestionDrawPad" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.netspace.library.controls.DrawView android:id="@+id/drawPad" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loadingLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/ic_progress_indeterminate_logo" style="?android:attr/progressBarStyleLarge" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/questiontoolsLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/imageViewAnswerSheet" android:background="?attr/toolbar_button_background" android:paddingRight="4dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_answersheet" />
+        <ImageView android:id="@+id/imageViewAdd" android:background="?attr/toolbar_button_background" android:paddingRight="4dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_plus" />
+        <ImageView android:id="@+id/imageViewLock" android:background="?attr/toolbar_button_background" android:paddingRight="4dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_locked" />
+        <ImageView android:id="@+id/imageViewFavorite" android:background="?attr/toolbar_button_background" android:paddingRight="4dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_star" />
+        <RelativeLayout android:id="@+id/RelativeLayoutMoreButton" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageViewMore" android:background="?attr/toolbar_button_background" android:paddingRight="4dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_more_normal" />
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="10sp" android:gravity="center" android:id="@+id/textViewTip" android:layout_width="wrap_content" android:layout_height="25dp" android:text="678" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_centerHorizontal="true" android:layout_centerVertical="false" android:alpha="0.8" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v4.widget.NestedScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayoutContent" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewCorrectRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="回答正确率" />
+            <LinearLayout android:id="@+id/layoutCorrectRate" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.github.mikephil.charting.charts.PieChart android:id="@+id/chartCorrectRate" android:layout_width="0dp" android:layout_height="400dp" android:layout_weight="1.0" />
+                <TableLayout android:layout_gravity="center_vertical" android:id="@+id/chartCorrectRateTable" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2.0">
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="正确" />
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="张三，李四，王五" android:layout_weight="0.6" />
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="错误" />
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="张三，李四，王五，张三，李四，王五张三，李四，王五张三，李四，王五,张三，李四，王五，张三，李四，王五张三，李四，王五张三，李四，王五" android:layout_weight="0.6" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewAnswers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="答案分布" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/layoutAnswers" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.github.mikephil.charting.charts.BarChart android:id="@+id/chartAnswers" android:layout_width="match_parent" android:layout_height="400dp" />
+                <TableLayout android:layout_gravity="center_vertical" android:id="@+id/chartAnswersTable" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

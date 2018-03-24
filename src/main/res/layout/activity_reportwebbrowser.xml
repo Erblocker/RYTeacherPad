@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:background="#ffffff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layoutContent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layoutNav">
+        <WebView android:id="@+id/webView1" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <com.netspace.library.controls.CustomShadowLinearLayout android:orientation="vertical" android:id="@+id/layoutNav" android:background="?attr/toolbar_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/toolbar_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        <ProgressBar android:id="@+id/progressBar1" android:layout_width="match_parent" android:layout_height="4dp" android:max="100" android:progress="50" android:progressDrawable="@drawable/simple_progressbar" style="?android:attr/progressBarStyleHorizontal" />
+    </com.netspace.library.controls.CustomShadowLinearLayout>
+</RelativeLayout>

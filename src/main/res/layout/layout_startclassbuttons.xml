@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:id="@+id/layoutStartClassParent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.netspace.library.controls.MaxHeightScrollView android:id="@+id/scrollViewTools" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:maxHeight="400dp">
+        <com.netspace.library.controls.MaxWidthHorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" app:maxWidth="800dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layoutStartClassButtons" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.netspace.library.controls.MaxWidthHorizontalScrollView>
+    </com.netspace.library.controls.MaxHeightScrollView>
+    <RelativeLayout android:layout_width="52dp" android:layout_height="52dp" android:layout_toRightOf="@+id/scrollViewTools">
+        <ImageButton android:id="@+id/imageButtonMore" android:background="@drawable/background_screen_startclass" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:src="@drawable/ic_more_normal" />
+        <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="32dp" android:layout_height="32dp" android:text="显示更多功能，点击可拖动工具栏" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="6pt" android:textColor="#ff0066ff" android:gravity="center" android:paddingRight="3dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

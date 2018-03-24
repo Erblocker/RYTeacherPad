@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.LockableScrollView android:id="@+id/ScrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/LayoutToolbars">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/LinearLayoutContent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20sp" android:id="@+id/textView1" android:background="#ffd9d9d9" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="回答时间" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/Layout1" android:layout_width="match_parent" android:layout_height="600dp" />
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20sp" android:id="@+id/textView2" android:background="#ffd9d9d9" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="答案情况" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/Layout2" android:layout_width="match_parent" android:layout_height="600dp" />
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20sp" android:id="@+id/textView3" android:background="#ffd9d9d9" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="回答正确率" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/Layout3" android:layout_width="match_parent" android:layout_height="600dp" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/LayoutGrid" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20sp" android:id="@+id/textView4" android:background="#ffd9d9d9" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="学生回答图片" />
+                <com.netspace.library.controls.ExpandableHeightGridView android:id="@+id/gridView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/LayoutStudentImage" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.netspace.library.controls.LockableScrollView>
+    <LinearLayout android:id="@+id/LayoutToolbars" android:background="#88ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentBottom="true">
+        <View android:id="@+id/view1" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonAirplay" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_airplay" />
+        <ImageButton android:id="@+id/ImageButtonSwitchDisplayMode" android:background="?attr/toolbar_button_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.8" />
+        <View android:id="@+id/View06" android:layout_width="30dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonCorrect" android:background="?attr/toolbar_button_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_correcting" />
+        <View android:id="@+id/View03" android:layout_width="20dp" android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@+id/textViewPos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="稍候..." android:layout_alignParentBottom="true" />
+</RelativeLayout>

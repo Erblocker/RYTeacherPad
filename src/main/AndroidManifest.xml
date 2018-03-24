@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:versionCode="5198" android:versionName="5.0.0.198" package="com.netspace.teacherpad" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="14" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.netspace.teacherpad.TeacherPadApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true">
+        <activity android:theme="@style/AppTheme" android:label="@string/app_name" android:name="com.netspace.teacherpad.MainActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.netspace.library.activity.PictureActivity2" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.library.activity.VideoPlayerActivity2" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/app_name" android:name="net.sourceforge.opencamera.MainActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/take_photo" android:icon="@drawable/ic_launcher_take_photo" android:name="net.sourceforge.opencamera.TakePhoto" android:taskAffinity="" android:excludeFromRecents="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.artifex.mupdfdemo.MuPDFActivity">
+            <intent-filter>
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.foxit.read.RD_ReadActivity" android:launchMode="singleTask" android:screenOrientation="fullSensor" android:configChanges="locale|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="org.videolan.vlc.gui.audio.AudioPlayerActivity" android:launchMode="singleTop" />
+        <activity android:name="com.netspace.library.activity.ResourcesViewActivity2" />
+        <activity android:name="com.netspace.library.activity.HomeworkCorrectActivity" />
+        <activity android:name=".StudentAnswerViewActivity" />
+        <activity android:name=".RecyclerTestActivity" />
+        <activity android:name="com.netspace.library.activity.FingerDrawActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.library.activity.FingerDrawActivity2" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.teacherpad.modules.startclass.ReportActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.teacherpad.modules.startclass.ReportActivity2" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.teacherpad.modules.paper.PaperViewActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.teacherpad.modules.homework.ResourceViewActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name=".WebBrowserActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name=".ScreenDisplayActivity" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" />
+        <activity android:theme="@style/AppThemeForSettingActivity" android:name=".SettingsActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.netspace.library.activity.CommentActivity" />
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" android:screenOrientation="sensorLandscape" />
+        <activity android:name=".LoginActivity2" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.WifiConfigActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.library.activity.AccountConfigActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name=".MasterControlActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.library.activity.SubjectLearnActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.HomeworkCorrectActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.ResourceDetailActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.ChatActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.ReportWebBrowserActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.netspace.teacherpad.QuestionCaptureActivity" />
+        <activity android:name="com.netspace.library.activity.AnswerSheetV2SelectQuestionCorrectActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.AnswerSheetV2OtherQuestionCorrectActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.AnswerSheetV3SelectQuestionCorrectActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.netspace.library.activity.AnswerSheetV3OtherQuestionCorrectActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="io.vov.vitamio.activity.InitActivity" android:launchMode="singleTop" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <service android:name="com.netspace.teacherpad.theads.MuteControlService" />
+        <service android:name="com.netspace.teacherpad.theads.ClassOnScreenControlsService" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.wrapper.CameraCaptureActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.wrapper.CameraRecordActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.restful.provider.camera.CameraRESTServiceActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.restful.provider.imagecrop.CropRESTServiceActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.restful.provider.screencapture.ScreenCaptureRESTServiceActivity" />
+        <receiver android:name=".BootUpReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.netspace.library.activity.WifiConfigActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.netspace.library.activity..AccountConfigActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.wrapper.ScreenRecordPermissionActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.wrapper.ScreenCaptureActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.wrapper.InVisibleActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.netspace.library.activity.ExecuteCommandActivity" />
+        <service android:name="com.netspace.library.window.ChatWindow" />
+        <service android:name="com.netspace.library.window.DrawWindow" />
+        <service android:name="com.netspace.library.window.TextWindow" />
+        <service android:name="com.netspace.library.window.VoiceWindow" />
+        <service android:name="com.netspace.library.window.VideoWindow" />
+        <service android:name="com.netspace.library.window.VideoChatWindow" />
+        <service android:name="com.netspace.library.window.CameraWindow" />
+        <service android:name="com.netspace.library.window.AnswerSheetWindow" />
+        <service android:name="com.netspace.library.im.IMService" />
+        <service android:name="com.netspace.library.service.ScreenRecorderService" />
+        <service android:name="com.netspace.library.service.ScreenRecorderService2" />
+        <service android:name="com.netspace.library.service.ScreenRecorderService3" />
+        <service android:name="com.netspace.library.service.CountDownService" />
+        <service android:name="com.netspace.library.service.StudentAnswerImageService" />
+        <activity android:theme="@style/AppThemeForSettingActivity" android:name="com.farproc.wifi.connecter.TestWifiScan" />
+        <activity android:theme="@style/Theme.AppCompat.Light.Dialog" android:name="com.farproc.wifi.connecter.MainActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:noHistory="true" />
+        <service android:name="com.farproc.wifi.connecter.ReenableAllApsWhenNetworkStateChanged$BackgroundService" />
+    </application>
+</manifest>

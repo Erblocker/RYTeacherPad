@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.CustomShadowLinearLayout android:orientation="vertical" android:id="@+id/layoutNav" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/actiontoolbarbackgroundcolor" android:layout_width="match_parent" android:layout_height="wrap_content" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app1:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        <android.support.design.widget.TabLayout android:id="@+id/tabs" android:background="?attr/toolbar_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="?attr/toolbar_tab_underlinecolor" app:tabIndicatorHeight="2dp" app:tabMode="0" app:tabGravity="0" app:tabTextColor="?attr/toolbar_textcolor" app:tabSelectedTextColor="?attr/toolbar_textcolor" app:layout_collapseMode="1" />
+    </com.netspace.library.controls.CustomShadowLinearLayout>
+    <com.netspace.teacherpad.controls.CustomViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

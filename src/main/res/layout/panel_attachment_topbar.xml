@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/panel_attachment_topbar" android:background="@color/ux_text_color_subhead_colour" android:layout_width="match_parent" android:layout_height="@dimen/ux_toolbar_height_phone">
+        <TextView android:textSize="@dimen/ux_text_height_title" android:textColor="@color/ux_color_white" android:gravity="center" android:id="@+id/panel_attachment_topbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rv_panel_title_attachment" android:layout_centerInParent="true" />
+        <ImageView android:id="@+id/panel_attachment_topbar_close" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ux_horz_left_margin_phone" android:src="@drawable/panel_topbar_close_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ux_text_height_button" android:textColor="@color/ux_color_white" android:id="@+id/panel_attachment_topbar_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ux_horz_left_margin_phone" android:text="@string/rv_panel_title_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

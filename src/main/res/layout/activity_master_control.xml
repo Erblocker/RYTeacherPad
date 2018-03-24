@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <android.support.v4.view.ViewPager android:id="@+id/pageSelector" android:layout_width="match_parent" android:layout_height="500dp" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageMonitor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_monitor" />
+    </LinearLayout>
+    <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_front" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="8dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/buttonLockScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部锁屏" style="@style/btnStyleBreakerBayNormal" />
+        <Button android:id="@+id/buttonUnLockScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="全部解锁" style="@style/btnStyleBreakerBayNormal" />
+        <Button android:id="@+id/buttonDisplayToPad" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="大屏幕上平板" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/buttonHonour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="荣誉和奖励" style="@style/btnStyleBreakerBayNormal" />
+        <Button android:id="@+id/buttonChart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抽查学生" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+</RelativeLayout>

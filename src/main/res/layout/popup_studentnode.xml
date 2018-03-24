@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layoutStudentFunctions" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/imageViewPad" android:layout_alignParentLeft="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewComputerScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginRight="30dp" android:layout_marginBottom="7dp" android:text="平板屏幕" />
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ffdbdbdb" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="7dp" android:text="|" />
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewQuestionAnswer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginBottom="7dp" android:text="题目回答" android:layout_weight="0.97" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <android.support.v4.view.ViewPager android:id="@+id/pageSelector" android:layout_width="320dp" android:layout_height="240dp" android:maxWidth="320dp" android:maxHeight="240dp" android:minWidth="320dp" android:minHeight="240dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+                <Button android:id="@+id/buttonProjectToScreen" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="投影到大屏幕" style="@style/btnStyleBreakerBayNormal" />
+                <Button android:id="@+id/buttonProjectToOtherPad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="投影到其它平板" style="@style/btnStyleBreakerBayNormal" />
+                <Button android:id="@+id/buttonLockScreen" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="锁屏" style="@style/btnStyleBreakerBayNormal" />
+                <Button android:id="@+id/buttonUnLock" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="解锁" style="@style/btnStyleBreakerBayNormal" />
+                <Button android:id="@+id/buttonAskQuestion" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="提问" style="@style/btnStyleBreakerBayNormal" />
+                <Button android:id="@+id/buttonReAnswer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="回答发还并投影" style="@style/btnStyleBreakerBayNormal" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="center" android:id="@+id/textViewIP" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Small Text" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/mt_ll_content" android:background="@color/ux_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ux_horz_left_margin_phone" android:paddingRight="@dimen/ux_horz_right_margin_phone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ux_text_height_menu" android:textColor="@color/ux_text_color_menu_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mt_text_markup" />
+            <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/mt_iv_highlight" android:paddingLeft="5dp" android:paddingTop="3dp" android:paddingRight="5dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/annot_highlight_selector" />
+                <ImageView android:id="@+id/mt_iv_underline" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_unl_selector" />
+                <ImageView android:id="@+id/mt_iv_squiggly" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_sqg_selector" />
+                <ImageView android:id="@+id/mt_iv_strikeout" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_sto_selector" />
+                <ImageView android:id="@+id/mt_iv_insert" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_insert_selector" />
+                <ImageView android:id="@+id/mt_iv_replace" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_replace_selector" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@color/ux_color_seperator_gray" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ux_horz_left_margin_phone" android:paddingRight="@dimen/ux_horz_right_margin_phone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ux_text_height_menu" android:textColor="@color/ux_text_color_menu_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mt_drawing" />
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/mt_iv_line" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_iv_line_selector" />
+                    <ImageView android:id="@+id/mt_iv_square" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_square_selector" />
+                    <ImageView android:id="@+id/mt_iv_circle" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/annot_circle_selector" />
+                    <ImageView android:id="@+id/mt_iv_arrow" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/mt_iv_arrow_selector" />
+                    <ImageView android:id="@+id/mt_iv_pencil" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/mt_iv_pencil_selector" />
+                    <ImageView android:id="@+id/mt_iv_eraser" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/rd_sg_clear_selector" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@color/ux_color_seperator_gray" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ux_horz_left_margin_phone" android:paddingRight="@dimen/ux_horz_right_margin_phone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ux_text_height_menu" android:textColor="@color/ux_text_color_menu_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mt_others" />
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/mt_iv_typewriter" android:background="@drawable/tb_circle_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/annot_typewriter_selector" android:scaleType="center" />
+                        <TextView android:textSize="12dp" android:textColor="@color/ux_text_color_body2_dark" android:id="@+id/mt_tv_typewriter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/annot_tool_display_name_typewrite" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                        <ImageView android:id="@+id/mt_iv_note" android:background="@drawable/tb_circle_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_iv_note_selector" android:scaleType="center" />
+                        <TextView android:textSize="12dp" android:textColor="@color/ux_text_color_body2_dark" android:id="@+id/mt_tv_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_string_note" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mt_ll_stamp" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                        <ImageView android:id="@+id/mt_iv_stamp" android:background="@drawable/tb_circle_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/_feature_mt_iv_stamp_selector" android:scaleType="center" />
+                        <TextView android:textSize="12dp" android:textColor="@color/ux_text_color_body2_dark" android:id="@+id/mt_tv_stamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/annot_tool_display_name_stamp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mt_ll_fileattach" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                        <ImageView android:id="@+id/mt_iv_fileattach" android:background="@drawable/tb_circle_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/annot_fileattachment_selector" android:scaleType="center" />
+                        <TextView android:textSize="12dp" android:textColor="@color/ux_text_color_body2_dark" android:id="@+id/mt_tv_fileattach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_string_fileattachment" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mt_ll_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/mt_iv_arrow_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_bottom" />
+    </LinearLayout>
+</LinearLayout>

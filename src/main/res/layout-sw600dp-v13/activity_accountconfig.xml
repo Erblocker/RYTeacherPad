@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="45sp" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:text="帐号设置" />
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="20dp" android:text="您可以使用摄像头拍摄说明书的帐号部分的二维码，程序将识别并自动完成帐号信息的录入。" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout1" android:layout_width="match_parent" android:layout_height="150dp" />
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewVoiceMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="10dp" android:text="您也可以手工输入帐号信息，请输入完整格式的帐号。" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/editAccount" android:background="?attr/edittext_widget_background" android:layout_width="500dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="1" android:ems="4" android:singleLine="true">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:id="@+id/layoutWorking" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ProgressBar android:id="@+id/progressWorking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="3dp" style="?android:attr/progressBarStyleSmall" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textWorking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在检测服务器的连接情况..." />
+        </LinearLayout>
+        <Button android:id="@+id/buttonFinish" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="完成设置" style="?attr/flat_button" />
+    </LinearLayout>
+</LinearLayout>

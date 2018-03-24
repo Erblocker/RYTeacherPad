@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/cardViewResource" android:background="@drawable/background_selectitem" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/RelativeLayout1" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/imageViewThumbnail" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_cardview_placehold_1" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/LinearLayoutTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_toRightOf="@+id/imageViewThumbnail">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#000000" android:id="@+id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="课程名称" />
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="2015-6-1" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#212121" android:ellipsize="end" android:id="@+id/textViewContent" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这是是文字，很多文字，测试，这是是文字，很多文字，测试，这是是文字，很多文字，测试，这是是文字，很多文字，测试，这是是文字，很多文字，测试123123
+sadf" android:maxLines="4" android:layout_toLeftOf="@+id/LinearLayoutTools" android:layout_toRightOf="@+id/imageViewThumbnail" android:layout_below="@+id/LinearLayoutTitle" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/LinearLayoutTools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/imageViewShare" android:background="?attr/toolbar_button_background" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:src="@drawable/ic_recycle" />
+            <ImageView android:id="@+id/imageViewRename" android:background="?attr/toolbar_button_background" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:src="@drawable/ic_recycle" />
+            <ImageView android:id="@+id/imageViewDelete" android:background="?attr/toolbar_button_background" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:src="@drawable/ic_recycle" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#000000" android:id="@+id/textViewFolderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="文件夹名称" android:layout_toRightOf="@+id/imageViewThumbnail" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewItemInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@+id/view2" android:background="#e8e8e8" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginLeft="90dp" android:layout_marginRight="12dp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_add" android:title=" 添加" app:showAsAction="never|ifRoom|withText">
+        <menu>
+            <item android:id="@+id/action_add_picture" android:title="图画" />
+            <item android:id="@+id/action_add_video" android:title="短视频" />
+            <item android:id="@+id/action_add_folder" android:title="目录" />
+        </menu>
+    </item>
+</menu>

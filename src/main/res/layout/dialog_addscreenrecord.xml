@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:background="#ffffff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layoutNav" android:layout_alignParentLeft="true" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_alignParentBottom="false">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="这个屏幕录像将被放到您的“我的资源库”->“我的平板”文件夹中，使用您输入的名称。这个录课可以像其它资源那样加入备课中。" />
+        <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_password" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="名称" android:ems="10" android:inputType="text">
+                <requestFocus />
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/buttonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定，开始后台上传" />
+            <Button android:id="@+id/buttonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消上传" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.netspace.library.controls.CustomShadowLinearLayout android:orientation="vertical" android:id="@+id/layoutNav" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:background="@drawable/userinfo_background" android:layout_width="match_parent" android:layout_height="75dp" android:tileMode="repeat">
+            <ImageView android:id="@+id/imageViewLogo" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="10dp" android:layout_marginRight="-30dp" android:src="@drawable/ic_camera_video" android:scaleType="center" android:adjustViewBounds="false" android:layout_alignParentRight="true" android:layout_centerVertical="false" />
+            <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        </RelativeLayout>
+    </com.netspace.library.controls.CustomShadowLinearLayout>
+</RelativeLayout>

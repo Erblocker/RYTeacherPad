@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:padding="15dp" android:layout_width="500dp" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这个资源将被放到您的“我的资源库”的当前打开文件夹中，使用您输入的名称。" />
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="名称" />
+    <EditText android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="在这里输入名称" android:ems="10">
+        <requestFocus />
+    </EditText>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="描述" />
+    <EditText android:id="@+id/editText2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="在这里输入对这个资源的描述" android:ems="10" />
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/buttonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定，开始后台上传" />
+        <Button android:id="@+id/buttonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消上传" />
+    </LinearLayout>
+</LinearLayout>

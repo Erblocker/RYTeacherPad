@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/textTitle" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="请稍候..." android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

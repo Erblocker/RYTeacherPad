@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioButton android:id="@+id/radioButtonHandWrite" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="主观题" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RadioButton android:id="@+id/radioButtonJudgement" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="判断题" android:layout_below="@+id/radioButtonHandWrite" android:layout_alignParentLeft="true" />
+    <com.netspace.library.controls.CustomQuestionOptionsSelect android:id="@+id/questionOptionsSelectJudgement" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_below="@+id/radioButtonJudgement" />
+    <RadioButton android:id="@+id/radioButtonSingleSelector" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="单选题" android:layout_below="@+id/questionOptionsSelectJudgement" android:layout_alignParentLeft="true" />
+    <com.netspace.library.controls.CustomQuestionOptionsSelect android:id="@+id/questionOptionsSelectSingle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_below="@+id/radioButtonSingleSelector" />
+    <RadioButton android:id="@+id/radioButtonMulti" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="多选题" android:layout_below="@+id/questionOptionsSelectSingle" />
+    <com.netspace.library.controls.CustomQuestionOptionsSelect android:id="@+id/questionOptionsSelectMulti" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_below="@+id/radioButtonMulti" />
+    <RadioButton android:id="@+id/radioButtonAnswerSheet" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="答题卡作答" android:layout_below="@+id/questionOptionsSelectMulti" android:layout_alignParentLeft="true" />
+</RelativeLayout>

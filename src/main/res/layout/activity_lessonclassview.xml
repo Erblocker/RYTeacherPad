@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/LayoutVideo" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <Button android:id="@+id/buttonMix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="混合" style="?attr/flat_button" />
+            <Button android:id="@+id/buttonScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大屏幕" style="?attr/flat_button" />
+            <Button android:id="@+id/buttonCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="对学生摄像头" style="?attr/flat_button" />
+            <Button android:id="@+id/buttonBackCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对黑板摄像头" style="?attr/flat_button" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view1" android:background="#cccccc" android:layout_width="1dp" android:layout_height="wrap_content" />
+    <ExpandableListView android:id="@+id/ListViewActions" android:layout_width="350dp" android:layout_height="wrap_content" android:layout_weight="0.4" />
+</LinearLayout>

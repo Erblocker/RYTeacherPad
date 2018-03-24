@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:gravity="top" android:id="@+id/EditText" android:background="?attr/edittext_widget_background" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="在这里输入文字" android:ems="10" android:layout_weight="0.9" android:inputType="textMultiLine">
+        <requestFocus />
+    </EditText>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.9">
+        <LinearLayout android:orientation="vertical" android:id="@+id/SubMenuLayout" android:layout_width="90dp" android:layout_height="match_parent" android:layout_marginLeft="4dp">
+            <ImageButton android:id="@+id/ButtonEdit" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit" />
+            <ImageButton android:id="@+id/ButtonIncrease" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus" />
+            <ImageButton android:id="@+id/ButtonDecrease" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_decrease" />
+            <ImageButton android:id="@+id/ButtonMoveUp" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moveup" />
+            <ImageButton android:id="@+id/ButtonMoveDown" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movedown" />
+            <LinearLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageButton android:id="@+id/ButtonDelete" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_recycle" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/frameLayoutTemp" android:background="#ff808080" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.CustomSurfaceView android:id="@+id/surfaceView1" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.netspace.library.controls.DrawView android:id="@+id/drawPad" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/textViewMessage" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在连接..." android:lines="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:id="@+id/layoutButons" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="40dp" android:layout_height="40dp">
+                <ImageView android:id="@+id/buttonBestFit" android:background="@drawable/background_circle_screenbutton_click_with_circle_border_without_text_padding" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_bestfit" />
+                <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="40dp" android:layout_height="40dp" android:text="缩放到最佳大小" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp">
+                <ImageView android:id="@+id/buttonMax" android:background="@drawable/background_circle_screenbutton_click_with_circle_border_without_text_padding" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_bestfit" />
+                <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="40dp" android:layout_height="40dp" android:text="小窗口悬浮显示" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

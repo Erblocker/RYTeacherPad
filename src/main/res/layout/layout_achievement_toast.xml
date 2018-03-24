@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/toast_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/linearLayoutToast" android:background="@drawable/background_achievement" android:paddingTop="60dp" android:layout_width="300dp" android:layout_height="300dp" android:layout_marginBottom="20dp">
+        <ImageView android:id="@+id/imageView1" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_placehold" android:scaleType="fitCenter" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#000000" android:gravity="center" android:id="@+id/textView2" android:layout_width="60dp" android:layout_height="wrap_content" android:text="抢答第一奖" />
+    </LinearLayout>
+</FrameLayout>

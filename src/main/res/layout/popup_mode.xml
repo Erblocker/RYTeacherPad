@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择功能" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linelayoutControls" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp">
+            <ImageButton android:id="@+id/buttonWhiteBoard" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+            <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="40dp" android:layout_height="40dp" android:text="切换到手写笔模式" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp">
+            <ImageButton android:id="@+id/buttonMouse" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+            <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="40dp" android:layout_height="40dp" android:text="切换到鼠标模式" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp">
+            <ImageButton android:id="@+id/buttonErase" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+            <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="40dp" android:layout_height="40dp" android:text="切换到橡皮擦模式" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp">
+            <ImageButton android:id="@+id/buttonClearWhiteBoard" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+            <TextView android:enabled="false" android:textColor="#00000000" android:ellipsize="end" android:layout_width="40dp" android:layout_height="40dp" android:text="清除白板上的全部内容" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

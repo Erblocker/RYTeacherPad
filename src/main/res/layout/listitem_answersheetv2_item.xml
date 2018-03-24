@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netspace.library.ui.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/RelativeLayout1" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearLayoutCorrectResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="false">
+            <ImageView android:id="@+id/imageViewCorrectResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_resource_correct" />
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewQuestionScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+20" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewQuestionIndex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="1、" android:layout_toRightOf="@+id/linearLayoutCorrectResult" />
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单项选择题" android:layout_toRightOf="@+id/textViewQuestionIndex" android:layout_alignBaseline="@+id/textViewQuestionIndex" />
+        <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureAllChildren="true" android:fillViewport="true" android:layout_toRightOf="@+id/textViewQuestionIndex" android:layout_below="@+id/textViewTitle" android:layout_alignParentTop="true">
+            <LinearLayout android:id="@+id/layoutContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="20dp">
+                <ImageView android:id="@+id/imageViewCamera" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_camera" />
+                <ImageView android:id="@+id/imageViewDraw" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_brush" />
+                <ImageView android:id="@+id/imageViewText" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_text" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</com.netspace.library.ui.CheckableFrameLayout>

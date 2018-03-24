@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.CustomVideoView4FullScreen android:id="@+id/surface_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" />
+    <FrameLayout android:orientation="horizontal" android:id="@+id/operation_volume_brightness" android:background="#00000000" android:padding="0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/operation_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_volumn_bg" />
+        <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="left" android:id="@+id/operation_full" android:layout_width="94dp" android:layout_height="wrap_content" android:src="@drawable/video_num_bg" />
+            <ImageView android:layout_gravity="left" android:id="@+id/operation_percent" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/video_num_front" android:scaleType="matrix" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

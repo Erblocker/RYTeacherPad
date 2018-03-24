@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:gravity="center" android:id="@+id/rd_annot_item_stamp_gridview" android:layout_width="match_parent" android:layout_height="300dp" android:listSelector="@drawable/_feature_annot_stamp_selectrect" android:horizontalSpacing="4dp" android:verticalSpacing="8dp" android:numColumns="2" />
+</LinearLayout>

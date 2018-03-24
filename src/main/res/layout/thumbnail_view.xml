@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/rv_page_present_thumbnail" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/thumbnail_edit_left_layout" android:background="@drawable/thumbnail_editlayout_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/thumbnail_rotate_acw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thumbnail_rotate_anticlockwise" />
+        <ImageView android:id="@+id/thumbnail_rotate_cw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thumbnail_rotate_clockwise" />
+        <ImageView android:id="@+id/thumbnail_delete_self" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thumbnail_delete_self" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/thumbnail_edit_right_layout" android:background="@drawable/thumbnail_editlayout_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/thumbnail_insert_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thumbnail_insert_left" />
+        <ImageView android:id="@+id/thumbnail_insert_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thumbnail_insert_right" />
+    </LinearLayout>
+    <ImageView android:id="@+id/thumbnail_select_view" android:background="@drawable/thumbnail_select_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="9sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/item_text" android:background="@drawable/thumbnail_textview_background_normal" android:layout_width="35dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="page" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

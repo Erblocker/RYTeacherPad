@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="180dp" android:src="@drawable/android_background" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout1" android:padding="10dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_centerHorizontal="false">
+        <Spinner android:id="@+id/spinnerScreenLayout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout android:id="@+id/tabs" android:background="#6000838f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/LinearLayout1" android:layout_alignParentLeft="true" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:elevation="10dp" app:tabIndicatorColor="#e6f4f8" app:tabIndicatorHeight="5dp" app:tabMode="0" app:tabGravity="0" app:tabTextColor="?attr/toolbar_textcolor" app:tabSelectedTextColor="?attr/toolbar_textcolor" app:layout_collapseMode="1" />
+    <com.netspace.library.controls.CustomViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/tabs" android:layout_alignParentLeft="true" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/widget_take_photo" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/take_photo" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:drawableTop="@drawable/ic_launcher_take_photo" android:textAllCaps="false" style="@style/Widget.DeviceDefault.Button.Borderless" />
+</LinearLayout>

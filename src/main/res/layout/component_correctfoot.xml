@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:background="#fff9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/View02" android:background="#ffb3b3b3" android:layout_width="match_parent" android:layout_height="1dp" />
+    <RadioGroup android:gravity="left" android:orientation="horizontal" android:id="@+id/radioCorrectArea" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+        <RadioButton android:id="@+id/radioCorrect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="正确" />
+        <RadioButton android:id="@+id/radioHalfCorrect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="半对" />
+        <RadioButton android:id="@+id/radioWrong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="错误" />
+    </RadioGroup>
+    <EditText android:id="@+id/editScore" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="200dp" android:layout_height="wrap_content" android:text="" android:hint="所得分" android:ems="10" android:layout_toRightOf="@+id/radioCorrectArea" android:layout_alignBaseline="@+id/radioCorrectArea" android:inputType="number">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/buttonChat" android:background="?attr/toolbar_button_background" android:layout_width="32dp" android:layout_height="32dp" android:src="@null" />
+    </LinearLayout>
+    <View android:id="@+id/view1" android:background="#ffb3b3b3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/radioCorrectArea" />
+</RelativeLayout>

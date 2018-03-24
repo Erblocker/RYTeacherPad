@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/layoutStartClassButtons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/imageButtonMore" android:background="@drawable/background_screen_startclass_with_more" android:clickable="false" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:src="@drawable/ic_launcher" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+</RelativeLayout>

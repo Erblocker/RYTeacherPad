@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:padding="5sp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/Status" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_status" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:id="@+id/Status_TextView" android:paddingLeft="5sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_connected" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/Speed" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_link_speed" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:id="@+id/LinkSpeed_TextView" android:paddingLeft="5sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="54Mbps" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signal" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:id="@+id/SignalStrength_TextView" android:paddingLeft="5sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Poor" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:id="@+id/Security_TextView" android:paddingLeft="5sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WEP" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/IPAddress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_address" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:id="@+id/IPAddress_TextView" android:paddingLeft="5sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="192.168.0.1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/Password" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/Password_TextView" android:paddingTop="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_type_passphrase" />
+        <com.farproc.wifi.connecter.ChangingAwareEditText android:id="@+id/Password_EditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+        <CheckBox android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/ShowPassword_CheckBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wifi_show_password" />
+    </LinearLayout>
+</LinearLayout>

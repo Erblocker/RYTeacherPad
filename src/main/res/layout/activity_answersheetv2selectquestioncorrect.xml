@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/rootLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/toolbar_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark" app:layout_scrollFlags="5" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutContent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:measureAllChildren="false" android:fillViewport="false">
+            <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewAnswers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="答案分布" />
+                <LinearLayout android:orientation="vertical" android:id="@+id/layoutAnswers" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.BarChart android:id="@+id/chartAnswers" android:layout_width="match_parent" android:layout_height="300dp" />
+                    <TableLayout android:layout_gravity="center_vertical" android:id="@+id/chartAnswersTable" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

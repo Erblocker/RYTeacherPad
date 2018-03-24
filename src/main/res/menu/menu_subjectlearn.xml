@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_search" android:title="搜索" app:showAsAction="ifRoom" app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

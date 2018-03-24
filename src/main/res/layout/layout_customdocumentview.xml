@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ImageView" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_placehold_document" android:layout_centerInParent="true" />
+    <ImageView android:id="@+id/ImageViewPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playback" android:scaleType="center" android:layout_centerInParent="true" />
+    <com.netspace.library.controls.CircularProgressBar android:id="@+id/ProgressBarLoading" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true" app:cpb_progressbar_color="#80212121" app:cpb_background_progressbar_color="#009e9e9e" app:cpb_progressbar_width="10dp" app:cpb_background_progressbar_width="10dp" />
+</RelativeLayout>

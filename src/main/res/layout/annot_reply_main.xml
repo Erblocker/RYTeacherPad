@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/annot_reply_top" android:background="@color/ux_bg_color_toolbar_light" android:layout_width="match_parent" android:layout_height="@dimen/ux_toolbar_height_phone">
+        <ImageView android:id="@+id/annot_reply_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ux_horz_left_margin_phone" android:src="@drawable/rd_sg_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ux_text_height_title" android:textColor="@color/ux_text_color_title_dark" android:id="@+id/annot_reply_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:text="@string/rd_comment_reply_list" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ux_text_height_button" android:textColor="@color/dlg_bt_text_selector" android:id="@+id/annot_reply_clear" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ux_horz_left_margin_phone" android:text="@string/fx_string_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/annot_reply_list_ll_content" android:background="@color/ux_color_yellow" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/annot_reply_top">
+        <ListView android:id="@+id/annot_reply_list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/rv_panel_bkot_item_bg" android:cacheColorHint="@android:color/transparent" android:divider="@color/ux_color_seperator_gray" android:dividerHeight="1px" android:fastScrollEnabled="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/top_ll_shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/annot_reply_top">
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/ux_toolbar_solidLine_height" android:src="@color/ux_color_shadow_solid_line" />
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/ux_shadow_height" android:src="@drawable/rd_search_shadow_bg90" />
+    </LinearLayout>
+</RelativeLayout>

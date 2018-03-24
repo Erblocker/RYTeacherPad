@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_showanswers" android:title="显示答案" app:showAsAction="never" />
+    <item android:id="@+id/action_addtoquestionbook" android:title="添加到我的试题本" app:showAsAction="never" />
+    <item android:id="@+id/action_addresourcelibrary" android:title="加入我的资源库" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center" android:id="@+id/LinearLayout1" android:background="#bb000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/ImageButtonPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MediaButton.Play" />
+    <ImageButton android:id="@+id/ImageButtonPause" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MediaButton.Pause" />
+    <SeekBar android:id="@+id/SeekBarPosition" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1.0" />
+</LinearLayout>

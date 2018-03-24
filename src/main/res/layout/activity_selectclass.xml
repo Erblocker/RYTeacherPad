@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="45sp" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:text="选择要上的课" />
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="20dp" android:text="下面列出了今天可以上的课，请选择您需要的。按“返回”返回到登录界面。" />
+        <ListView android:id="@+id/listView1" android:background="@drawable/background_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="60dp" android:layout_marginTop="20dp" android:layout_marginRight="60dp" android:layout_marginBottom="30dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewProgressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载数据，请稍候..." />
+        </LinearLayout>
+        <Button android:id="@+id/buttonRetry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="150dp" android:text="重试" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:shape="rectangle">
+    <item>
+        <shape>
+            <solid android:color="#eeeeee" />
+            <stroke android:width="1dp" android:color="#cccccc" />
+        </shape>
+    </item>
+    <item android:left="2dp" android:top="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#eeeeee" />
+        </shape>
+    </item>
+</layer-list>

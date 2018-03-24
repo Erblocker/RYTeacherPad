@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.CustomVideoView2 android:id="@+id/videoView1" android:layout_width="100dp" android:layout_height="200dp" />
+    <com.netspace.library.controls.CustomVideoView2 android:id="@+id/videoView2" android:layout_width="100dp" android:layout_height="200dp" />
+    <com.netspace.library.controls.CustomVideoView2 android:id="@+id/videoView3" android:layout_width="100dp" android:layout_height="200dp" />
+    <RelativeLayout android:id="@+id/LayoutControls" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

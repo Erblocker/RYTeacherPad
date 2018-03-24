@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <PreferenceCategory android:title="工具栏图标设置">
+        <MultiSelectListPreference android:entries="@array/startclassicons_entries" android:title="上课工具栏显示图标..." android:key="ClassVisibleButtons" android:summary="点击这里选择哪些图标需要在上课的工具栏显示，隐藏的图标可以通过更多菜单打开对应的功能。" android:defaultValue="@array/startclassicons_default" android:dialogTitle="选择显示在常用工具栏的图标" android:entryValues="@array/startclassicons_values" />
+        <MultiSelectListPreference android:entries="@array/startclass_pcscreen_icons_entries" android:title="大屏幕显示图标..." android:key="PCVisibleButtons" android:summary="点击这里选择哪些图标需要在大屏幕窗口的左下角显示，选中的图标会在播放适合的资源的时候显示出来。" android:defaultValue="@array/startclass_pcscreen_icons_default" android:dialogTitle="选择显示在大屏幕界面里的的图标" android:entryValues="@array/startclass_pcscreen_icons_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="按钮合并设置">
+        <CheckBoxPreference android:title="锁定和解锁按钮合并" android:key="ClassButton_LockUnlockMerge" android:summary="选中后，这个按钮将在锁定和解锁功能之间切换，按一下是锁定，再按一下是解锁" android:defaultValue="false" />
+        <CheckBoxPreference android:title="绘画按钮合并" android:key="ClassButton_DrawMerge" android:summary="选中后，点击绘画按钮将弹出二级菜单，里面可以选择使用的功能，如画笔，鼠标，橡皮擦。" android:defaultValue="false" />
+        <CheckBoxPreference android:title="播放按钮合并" android:key="ClassButton_PlayMerge" android:summary="选中后，点击将出现播放，暂停，快速跳转二级菜单。" android:defaultValue="false" />
+        <CheckBoxPreference android:title="隐藏上一页，下一页按钮" android:key="ClassButton_NextPrevHide" android:summary="选中后，将不显示上一页和下一页按钮，可以通过大屏幕界面左右滑动控制上一页和下一页。" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="其它功能设置">
+        <CheckBoxPreference android:title="放大屏幕后自动进入手写笔模式" android:key="SetToWriteModeOnMaxmize" android:summary="选中后，当将一个屏幕放大后，会自动进入手写笔模式。" android:defaultValue="true" />
+        <CheckBoxPreference android:title="手写笔按键按下切换鼠标和笔" android:key="PenButtonSwitch" android:summary="选中后，每次按下手写笔上的按键就在笔和鼠标之间切换。不选中那么只有按着按键才是鼠标模式。" android:defaultValue="true" />
+        <CheckBoxPreference android:title="自动锁定学生平板" android:key="LockStudentPadAfterAnswer" android:summary="选中后，当学生提交完成作答后，自动锁定学生平板。" android:defaultValue="true" />
+        <CheckBoxPreference android:title="允许学生作答后查看别的学生的作答" android:key="AllowViewOtherAnswer" android:summary="选中后，学生作答结束后的锁屏界面上会显示出别的学生的作答。" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

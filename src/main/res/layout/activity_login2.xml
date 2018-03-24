@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="@drawable/background_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/imageViewLayout" android:background="@drawable/ic_userimageback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/imageView1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/no_pic" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#ffffff" android:id="@+id/textViewRealName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="张三" android:shadowColor="#000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" />
+        <EditText android:id="@+id/editTextPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxWidth="50mm" android:hint="请输入密码" android:ems="15" android:inputType="textPassword" />
+        <Button android:id="@+id/buttonLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minWidth="150dp" android:text="登录教师端" android:freezesText="false" style="?attr/flat_button" />
+        <TextView android:id="@+id/textViewNewVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="正在检查新版本..." />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="1.0.0.0" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

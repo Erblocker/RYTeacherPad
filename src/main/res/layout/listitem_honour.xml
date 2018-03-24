@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:id="@+id/LinearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:layout_marginBottom="5dp" android:minHeight="53dp">
+        <ImageView android:id="@+id/imageView1" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="6dp" android:src="@drawable/ic_launcher" android:scaleType="fitCenter" android:maxWidth="48dp" android:maxHeight="64dp" android:cropToPadding="true" android:minWidth="72dp" android:minHeight="72dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前没有数据。" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp">
+        <Button android:id="@+id/buttonSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="奖励给学生" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+</LinearLayout>

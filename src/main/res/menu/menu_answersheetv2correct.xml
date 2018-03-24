@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_correctanswer" android:title="设置正确答案" app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_a" android:title="A" />
+        </menu>
+    </item>
+    <item android:id="@+id/action_save" android:title="自动批改客观题并保存全部批改结果" app:showAsAction="always" />
+    <item android:id="@+id/action_refresh" android:title="刷新" app:showAsAction="always" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_prev" android:title="上一题" app:showAsAction="always" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_next" android:title="下一题" app:showAsAction="always" />
+</menu>

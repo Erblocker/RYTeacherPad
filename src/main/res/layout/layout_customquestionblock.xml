@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:background="@drawable/subject_listitem" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout1" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.netspace.library.controls.DrawView android:id="@+id/drawView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:id="@+id/LayoutToolButtons" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.0">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:layout_gravity="right" android:id="@+id/textViewScore" android:background="#ff00ff00" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="-15分" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netspace.library.ui.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+        <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/imageUnread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/ic_unread" />
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="12sp" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="Large Text" />
+    </LinearLayout>
+</com.netspace.library.ui.CheckableFrameLayout>

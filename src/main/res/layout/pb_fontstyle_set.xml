@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ux_horz_right_margin_phone" android:layout_marginRight="@dimen/ux_horz_left_margin_phone">
+        <ImageView android:id="@+id/pb_iv_fontstyle_back" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_fontstyle_back_selector" />
+        <TextView android:textSize="@dimen/ux_text_height_body2" android:textColor="@color/ux_text_color_body2_dark" android:gravity="center_vertical" android:id="@+id/pb_font_select_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Font" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="1px" android:src="@color/ux_color_seperator_gray" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:id="@+id/pb_lv_font" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/ux_color_translucent" android:divider="@color/ux_color_seperator_gray" android:dividerHeight="1px" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="1px" android:src="@color/ux_color_seperator_gray" />
+</LinearLayout>

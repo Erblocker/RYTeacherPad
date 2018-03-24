@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:background="@color/ux_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rv_security_information_tab_ly" android:layout_width="match_parent" android:layout_height="41dp" android:baselineAligned="false">
+        <RelativeLayout android:id="@+id/rv_security_information_prm_ly" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ux_horz_left_margin_phone" android:textColor="@color/ux_text_color_body2_dark" android:gravity="center" android:id="@+id/rv_security_information_prmtitle" android:background="@drawable/rv_panel_bkot_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/rv_doc_info_permission" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rv_security_information_prmline" android:background="@color/ux_color_black" android:layout_width="match_parent" android:layout_height="@dimen/ux_shadow_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rv_security_information_detail_ly" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ux_horz_left_margin_phone" android:textColor="@color/ux_text_color_body2_dark" android:gravity="center" android:id="@+id/rv_security_information_detailtitle" android:background="@drawable/rv_panel_bkot_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/rv_security_information_certlist_title" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rv_security_information_detailline" android:background="@color/ux_color_black" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/ux_shadow_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/shadow" android:background="@drawable/toolbar_shadow_top" android:layout_width="match_parent" android:layout_height="3dp" android:layout_below="@+id/select_title" />
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ListView android:id="@+id/rv_security_information_listp" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#0000" android:cacheColorHint="@android:color/transparent" />
+        <ListView android:id="@+id/rv_security_information_listc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#0000" android:cacheColorHint="@android:color/transparent" />
+    </LinearLayout>
+</LinearLayout>

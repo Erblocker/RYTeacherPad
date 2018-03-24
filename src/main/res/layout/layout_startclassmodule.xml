@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/linearLayoutTools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <Button android:id="@+id/buttonListMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="列表模式" style="?attr/flat_button" />
+        <Button android:id="@+id/buttonSchedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="课程表模式" style="?attr/flat_button" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="20dp" android:text="准备上课" />
+    <com.netspace.library.controls.CustomViewPager android:id="@+id/customViewPager1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:layout_below="@+id/linearLayoutTools">
+        <me.maxwin.view.XListView android:id="@+id/listView1" android:background="@drawable/background_frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.netspace.library.controls.CustomScheduleView android:id="@+id/calendarView1" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.netspace.library.controls.CustomViewPager>
+</RelativeLayout>

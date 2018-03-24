@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:background="@drawable/subject_listitem_bg_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="1dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayoutContent" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="256dp" android:layout_margin="5dp">
+                <ImageView android:id="@+id/imageViewThumbnil" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@null" />
+                <com.netspace.library.controls.LinedEditText android:id="@+id/editText1" android:background="@drawable/background_textcomponent" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textMultiLine" android:imeOptions="actionNone">
+                    <requestFocus />
+                </com.netspace.library.controls.LinedEditText>
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张三" android:layout_alignBottom="@+id/linearLayoutContent" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayoutCorrectMenu" android:background="#80808080" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/imageViewResult" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_resource_correct" />
+            <TextView android:id="@+id/textViewScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+5" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

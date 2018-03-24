@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/progress_dlg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView" android:background="@drawable/progress_bar_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/progressBar" android:layout_alignBottom="@+id/progressBar" android:layout_centerHorizontal="true" />
+        <TextView android:id="@+id/progress_dlg_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_toRightOf="@+id/progressBar" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@+id/progressBar" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleInverse" />
+    </RelativeLayout>
+</LinearLayout>

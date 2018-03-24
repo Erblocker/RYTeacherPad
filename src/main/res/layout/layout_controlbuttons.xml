@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonMute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_volume_muted" style="@style/btnStyleBreakerBayNormal" />
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonVolumnUp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:src="@drawable/ic_volume_high" style="@style/btnStyleBreakerBayNormal" />
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/buttonVolumnDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:src="@drawable/ic_volume_low" style="@style/btnStyleBreakerBayNormal" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageButton android:id="@+id/buttonPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_media_play" style="@style/btnStyleBreakerBayNormal" />
+        <ImageButton android:id="@+id/buttonStop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_media_pause" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageButton android:id="@+id/buttonPrev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_media_previous" style="@style/btnStyleBreakerBayNormal" />
+        <ImageButton android:id="@+id/buttonNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_media_next" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageButton android:id="@+id/buttonZoomin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_zoomin" style="@style/btnStyleBreakerBayNormal" />
+        <ImageButton android:id="@+id/buttonZoomout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_zoomout" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageButton android:id="@+id/buttonReport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_report" style="@style/btnStyleBreakerBayNormal" />
+        <ImageButton android:id="@+id/buttonWhiteBoard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_whiteboard" style="@style/btnStyleBreakerBayNormal" />
+        <ImageButton android:id="@+id/buttonMouse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mouse" style="@style/btnStyleBreakerBayNormal" />
+        <ImageButton android:id="@+id/buttonDesktop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_showdesktop" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageButton android:id="@+id/buttonCamera" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginRight="6dp" android:src="@drawable/ic_camera" style="@style/btnStyleBreakerBayNormal" />
+        <Button android:textSize="20sp" android:id="@+id/buttonStartQuestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="140dp" android:minHeight="52dp" android:text="发起做题" style="@style/btnStyleBreakerBayNormal" />
+    </LinearLayout>
+    <Button android:textSize="20sp" android:id="@+id/buttonBroadcast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minWidth="140dp" android:minHeight="52dp" android:text="广播屏幕" style="@style/btnStyleBreakerBayNormal" />
+</LinearLayout>

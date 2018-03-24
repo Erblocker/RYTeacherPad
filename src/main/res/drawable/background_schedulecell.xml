@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:shape="rectangle">
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="#ffe225" android:endColor="#ffe225" android:angle="90.0" />
+            <stroke android:width="1dp" android:color="#3a9a0f" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#bedef7" />
+            <stroke android:width="1dp" android:color="#adbfce" />
+        </shape>
+    </item>
+</selector>

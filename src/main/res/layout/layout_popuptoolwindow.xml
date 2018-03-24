@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/arrowLayoutTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="false">
+        <ImageView android:id="@+id/imageViewTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_arrow_top_bordercolor" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/framePopupContent" android:background="@drawable/background_popupwindow" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12dp" android:layout_toLeftOf="@+id/arrowLayoutRight" android:layout_toRightOf="@+id/arrowLayoutLeft" android:layout_above="@+id/arrowLayoutBottom" android:layout_below="@+id/arrowLayoutTop" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@+id/arrowLayoutBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/imageViewBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_arrow_bottom_bordercolor" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/arrowLayoutLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/arrowLayoutBottom" android:layout_below="@+id/arrowLayoutTop" android:layout_alignParentLeft="true" android:layout_alignParentTop="false" android:layout_alignParentBottom="false">
+        <ImageView android:id="@+id/imageViewLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_arrow_left_bordercolor" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/arrowLayoutRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/arrowLayoutBottom" android:layout_below="@+id/arrowLayoutTop" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_alignParentBottom="false">
+        <ImageView android:id="@+id/imageViewRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_arrow_right_bordercolor" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

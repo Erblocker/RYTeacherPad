@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:background="@color/ux_bg_color_docviewer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/thumbnailist" android:background="@color/ux_bg_color_docviewer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ux_toolbar_height_phone">
+        <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@+id/thumbnail_grid_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rd_viewmode_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

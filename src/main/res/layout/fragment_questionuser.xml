@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RadioButton android:id="@+id/radioButtonAll" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="全班学生" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RadioButton android:id="@+id/radioButtonGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="学生分组" android:layout_below="@+id/radioButtonAll" android:layout_alignParentLeft="true" />
+    <ExpandableListView android:id="@+id/listGroup" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="25dp" android:layout_below="@+id/radioButtonGroup" />
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="center" android:id="@+id/textViewEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前没有自定义的学生分组" android:layout_alignLeft="@+id/listGroup" android:layout_alignTop="@+id/listGroup" android:layout_alignRight="@+id/listGroup" android:layout_alignBottom="@+id/listGroup" />
+    <RadioButton android:id="@+id/radioButtonRandom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="随机学生" android:layout_below="@+id/listGroup" android:layout_alignParentLeft="true" />
+    <ListView android:id="@+id/listRandom" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="25dp" android:layout_below="@+id/radioButtonRandom" />
+    <Button android:id="@+id/buttonRandom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="随机选一个学生" android:layout_below="@+id/listRandom" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_addbookmark" android:title="添加到收藏夹" app:showAsAction="always" />
+    <item android:id="@+id/action_bookmarklist" android:title="我的收藏夹" app:showAsAction="never|always|withText">
+        <menu />
+    </item>
+</menu>

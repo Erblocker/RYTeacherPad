@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutContent" android:paddingLeft="32dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="检测到有下列睿易通正在运行，请选择您上课需要配合使用的。长按可以选择退出某个睿易通。" />
+        <me.maxwin.view.XListView android:id="@+id/listView1" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

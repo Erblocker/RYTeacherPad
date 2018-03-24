@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_opensource" android:title="打开这道题的原始资源" app:showAsAction="never" />
+    <item android:id="@+id/action_refresh" android:title="刷新" app:showAsAction="always" />
+    <item android:id="@+id/action_userfilter" android:visible="false" android:title="学生过滤" app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/group_userselection" android:checkableBehavior="single">
+                <item android:id="@+id/action_displayuncorrect" android:title="仅显示尚未批改的学生" />
+                <item android:id="@+id/action_all_user" android:title="全部学生" />
+                <item android:id="@+id/action_select_user" android:title="仅显示选中的学生" />
+                <item android:id="@+id/action_displaycorrect" android:title="仅显示做对的学生" />
+                <item android:id="@+id/action_displaywrong" android:title="仅显示做错和半对的学生" />
+            </group>
+            <group android:id="@+id/group_users" android:checkableBehavior="all" />
+        </menu>
+    </item>
+    <item android:id="@+id/action_userjump" android:visible="false" android:title="跳转" app:showAsAction="always">
+        <menu />
+    </item>
+    <item android:id="@+id/action_save" android:title=" 保存批改结果" app:showAsAction="never|always|withText" app:actionLayout="@layout/layout_answersheet_menu_action_save" />
+    <item android:id="@+id/action_report" android:title=" 报表" app:showAsAction="never|always|withText" />
+    <item android:icon="@drawable/ic_airplay_white" android:id="@+id/action_airplay" android:title="投影到大屏幕" app:showAsAction="never" />
+    <item android:id="@+id/action_autocorrect" android:visible="false" android:title="自动批改客观题" app:showAsAction="always" />
+    <item android:id="@+id/action_stopsubmit" android:title="停止提交" app:showAsAction="never" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_prev" android:title="上一题" app:showAsAction="never" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_next" android:title="下一题" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:gravity="center" android:orientation="vertical" android:id="@+id/LinearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请开始说话，程序正在记录，最多可以录3分钟。" />
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textViewTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+    <Button android:id="@+id/buttonSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="说完了，发送" style="?attr/flat_button" />
+    <Button android:id="@+id/buttonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="取消" style="?attr/flat_button" />
+</LinearLayout>

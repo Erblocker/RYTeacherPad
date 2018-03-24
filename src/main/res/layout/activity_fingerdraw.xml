@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="#ff808080" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.DrawView android:id="@+id/drawPad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@+id/imageViewPointer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus_light" />
+    <ScrollView android:id="@+id/scrollView1" android:background="?attr/toolbar_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <ImageView android:id="@+id/buttonBrush" android:tag="粗笔" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_brush" />
+            <ImageView android:id="@+id/buttonPencial" android:tag="铅笔" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_pencial" />
+            <ImageView android:id="@+id/buttonText" android:tag="文字输入" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_text" />
+            <ImageView android:id="@+id/buttonEraser" android:tag="橡皮擦，长按清除全部内容" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_eraser" />
+            <ImageView android:id="@+id/buttonColorize" android:tag="调色板" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_colorize" />
+            <ImageView android:id="@+id/buttonGraphics" android:tag="几何画板" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_graphics" />
+            <ImageView android:id="@+id/buttonGraphicOK" android:tag="保存几何画板内容" android:background="@drawable/background_toolbar" android:visibility="gone" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_resource_correct" />
+            <ImageView android:id="@+id/buttonGraphicCancel" android:tag="取消画板内容" android:background="@drawable/background_toolbar" android:visibility="gone" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_resource_wrong" />
+            <ImageView android:id="@+id/buttonCamera" android:tag="拍照" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_camera2" />
+            <ImageView android:id="@+id/buttonRotate" android:tag="旋转画布" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_rotate" />
+            <ImageView android:id="@+id/buttonOk" android:tag="提交作答" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_ok" />
+            <ImageView android:id="@+id/buttonProjector" android:tag="投影到大屏幕" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_projector" />
+            <ImageView android:id="@+id/buttonBroadcast" android:tag="广播给全体学生" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_broadcast" />
+            <ImageView android:id="@+id/buttonBestFit" android:tag="最适合大小" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_bestfit" />
+            <ImageView android:id="@+id/buttonVote" android:tag="好评" android:background="@drawable/background_toolbar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_bestfit" />
+        </LinearLayout>
+    </ScrollView>
+    <EditText android:id="@+id/editText" android:background="?attr/edittext_widget_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="在这里输入文字，支持多行。长按这里2秒可以移动。" android:ems="10" android:layout_toLeftOf="@+id/scrollView1" android:layout_alignParentBottom="true" android:inputType="textMultiLine" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layoutNewPage" android:background="@drawable/background_fingerdraw_pagenav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/imageButtonBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_black_24dp" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:id="@+id/textViewPageIndex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="Small Text" />
+        <ImageView android:id="@+id/imageButtonNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_forward_black_24dp" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewQuestionIndex" android:background="#cceeeeee" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第1题" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

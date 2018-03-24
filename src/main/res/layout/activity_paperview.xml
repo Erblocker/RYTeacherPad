@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.LockableScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:id="@+id/scrollViewContent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/LayoutToolbars">
+        <LinearLayout android:orientation="vertical" android:id="@+id/LayoutContent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.netspace.library.controls.LockableScrollView>
+    <LinearLayout android:id="@+id/LayoutToolbars" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentBottom="true">
+        <View android:id="@+id/view1" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/imageButtonList" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list" />
+        <View android:id="@+id/View07" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonLock" android:background="?attr/toolbar_button_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_locked" />
+        <View android:id="@+id/View08" android:visibility="gone" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonSave" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_save" />
+        <View android:id="@+id/View09" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonCheckMark" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_correcting" />
+        <View android:id="@+id/View04" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonErase" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_erase" />
+        <View android:id="@+id/View01" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonAirplay" android:background="?attr/toolbar_button_background" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_airplay" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.8" />
+        <ImageButton android:id="@+id/ImageButtonUp" android:background="?attr/toolbar_button_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moveup" />
+        <View android:id="@+id/View02" android:layout_width="10dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonDown" android:background="?attr/toolbar_button_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movedown" />
+        <View android:id="@+id/View06" android:layout_width="30dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonPrev" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left" />
+        <View android:id="@+id/View05" android:layout_width="10dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonNext" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+        <View android:id="@+id/View03" android:layout_width="20dp" android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@+id/textViewPos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="Large Text" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/pb_ll_top" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pb_topTitle_ll" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pb_ll_titles" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pb_ll_title_checks" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pb_ll_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/pb_ll_top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/pb_ll_tabContents" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@+id/pb_iv_title_shadow" android:layout_width="match_parent" android:layout_height="@dimen/ux_shadow_height" android:src="@drawable/toolbar_shadow_top" android:layout_below="@+id/pb_ll_top" />
+</RelativeLayout>

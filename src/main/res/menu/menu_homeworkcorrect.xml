@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_userfilter" android:title="学生过滤" app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/group_userselection" android:checkableBehavior="single">
+                <item android:id="@+id/action_displayuncorrect" android:title="仅显示尚未批改的学生" />
+                <item android:id="@+id/action_all_user" android:title="全部学生" />
+                <item android:id="@+id/action_select_user" android:title="仅显示选中的学生" />
+                <item android:id="@+id/action_displaycorrect" android:title="仅显示做对的学生" />
+                <item android:id="@+id/action_displaywrong" android:title="仅显示做错和半对的学生" />
+            </group>
+            <group android:id="@+id/group_users" android:checkableBehavior="all" />
+        </menu>
+    </item>
+    <item android:id="@+id/action_userjump" android:title="跳转" app:showAsAction="always">
+        <menu />
+    </item>
+    <item android:id="@+id/action_report" android:title="作答情况报表" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_airplay_white" android:id="@+id/action_airplay" android:title="投影" app:showAsAction="always" />
+    <item android:id="@+id/action_autocorrect" android:title="自动批改客观题" app:showAsAction="always" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_prev" android:title="上一题" app:showAsAction="always" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_next" android:title="下一题" app:showAsAction="always" />
+</menu>

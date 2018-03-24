@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:minWidth="40dp" android:minHeight="40dp" android:initialLayout="@layout/widget_layout_take_photo" />

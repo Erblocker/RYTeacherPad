@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/imageButtonDrawPad" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drawpad" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/imageButtonVoice" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/imageButtonFace" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_face" />
+    <EditText android:id="@+id/editText1" android:background="@drawable/apptheme_edit_text_holo_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/imageButtonSend" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_send" />
+</LinearLayout>

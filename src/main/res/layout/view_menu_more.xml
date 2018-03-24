@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:background="@color/ux_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ux_toolbar_height_phone">
+        <LinearLayout android:orientation="vertical" android:id="@+id/menu_more_content_ly" android:background="@color/ux_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <RelativeLayout android:id="@+id/menu_more_title_ly" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

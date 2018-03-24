@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:id="@+id/action_shareto_classshowcase" android:title="分享到班级展示区" app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_shareto_chattarget" android:title="分享给当前的在线答疑对象" />
+    <item android:id="@+id/action_select_user" android:title="选择分享对象..." />
+</menu>

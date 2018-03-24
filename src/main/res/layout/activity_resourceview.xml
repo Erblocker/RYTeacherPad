@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6000dp" />
+    <com.netspace.library.controls.LockableScrollView android:id="@+id/scrollViewContent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/LayoutToolbars">
+        <RelativeLayout android:scrollbarAlwaysDrawVerticalTrack="true" android:layout_gravity="top" android:id="@+id/overlappedContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/LayoutContent" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </com.netspace.library.controls.LockableScrollView>
+    <Button android:textSize="40sp" android:id="@+id/buttonStudentName" android:background="@drawable/background_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:layout_marginRight="100dp" android:minWidth="200dp" android:minHeight="80dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/LayoutTools" android:background="@drawable/background_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="115dp" android:layout_above="@+id/LayoutToolbars">
+        <ImageButton android:id="@+id/ButtonEdit" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit" />
+        <ImageButton android:id="@+id/ButtonErase" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_erase" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/LayoutToolbars" android:background="#88ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentBottom="true">
+        <View android:id="@+id/view1" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/imageButtonList" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list" />
+        <View android:id="@+id/View07" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonLock" android:background="?attr/toolbar_button_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_locked" />
+        <View android:id="@+id/View08" android:visibility="gone" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonSave" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_save" />
+        <View android:id="@+id/View09" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonCheckMark" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_correcting" />
+        <View android:id="@+id/View01" android:layout_width="20dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonAirplay" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_airplay" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.8" />
+        <ImageButton android:id="@+id/ImageButtonAdd" android:background="?attr/toolbar_button_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus" />
+        <View android:id="@+id/View06" android:layout_width="30dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonAutoCorrect" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_autocorrect" />
+        <ImageButton android:id="@+id/ImageButtonReport" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_graphic" />
+        <ImageButton android:id="@+id/ImageButtonComment" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_comments" />
+        <View android:id="@+id/View02" android:layout_width="30dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonPrev" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left" />
+        <View android:id="@+id/View05" android:layout_width="10dp" android:layout_height="match_parent" />
+        <ImageButton android:id="@+id/ImageButtonNext" android:background="?attr/toolbar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+        <View android:id="@+id/View03" android:layout_width="20dp" android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@+id/textViewPos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="Large Text" android:layout_alignParentBottom="true" />
+</RelativeLayout>

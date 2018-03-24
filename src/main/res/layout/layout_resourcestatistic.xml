@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/RelativeLayout1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/listViewResource" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/CustomShadowLinearLayout1" android:layout_alignParentLeft="true" />
+    <com.netspace.library.controls.CustomShadowLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/CustomShadowLinearLayout1" android:background="?attr/activity_drawer_top_backgroundcolor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="题型筛选" />
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="试题作答情况这里显示" />
+            <Spinner android:id="@+id/spinner1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.netspace.library.controls.CustomShadowLinearLayout>
+</RelativeLayout>

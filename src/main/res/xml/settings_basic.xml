@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <PreferenceCategory android:title="登录设置">
+        <CheckBoxPreference android:title="保存登录密码" android:key="RememberPassword" android:summary="选中后，您每次不需要重新输入密码。" />
+        <CheckBoxPreference android:title="自动登录" android:key="AutoLogin" android:summary="配合保存密码选项，选中此项后，下次可以自动登录。" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="作业批改设置">
+        <ListPreference android:entries="@array/penwidth_entries" android:title="笔粗细" android:key="PenWidth" android:summary="设置批改作业时红笔的默认粗细程度，值越大越粗，越小越细" android:defaultValue="6" android:entryValues="@array/penwidth_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="录微课设置">
+        <ListPreference android:entries="@array/audiogain_entries" android:title="音频增益" android:key="AudioGain" android:summary="设置录制微课时麦克风的音量增益" android:defaultValue="1" android:entryValues="@array/audiogain_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

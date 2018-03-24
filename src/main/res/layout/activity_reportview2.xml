@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:id="@+id/drawerLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/rootLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbarlayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/collapse_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="600dp" app:layout_scrollFlags="3" app:expandedTitleMarginStart="48dp" app:expandedTitleMarginEnd="64dp" app:contentScrim="@color/actiontoolbarbackgroundcolor">
+                <ImageView android:id="@+id/imageViewQuestionImage" android:background="#000000" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="600dp" android:src="@drawable/ic_placehold" />
+                <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="#003f51b5" android:layout_width="match_parent" android:layout_height="60dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark" app:layout_collapseMode="1">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20sp" android:gravity="center" android:id="@+id/textViewAnswerTimeCount" android:padding="4dp" android:layout_width="500dp" android:layout_height="wrap_content" android:text="" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <android.support.design.widget.TabLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/tabs" android:background="#ff3f51b5" android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="?attr/toolbar_tab_underlinecolor" app:tabIndicatorHeight="2dp" app:tabMode="0" app:tabGravity="0" app:tabTextColor="?attr/toolbar_textcolor" app:tabSelectedTextColor="?attr/toolbar_textcolor" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <android.support.design.widget.NavigationView android:layout_gravity="start" android:id="@+id/navigationView" android:layout_width="250dp" android:layout_height="match_parent" app:menu="@menu/menu_drawer" app:headerLayout="@layout/report_drawer_header" />
+</android.support.v4.widget.DrawerLayout>

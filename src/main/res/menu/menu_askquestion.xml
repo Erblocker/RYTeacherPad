@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:icon="@drawable/ic_done_white_24dp" android:id="@+id/action_selectall" android:title=" 全选学生" app:showAsAction="never|always|withText" />
+    <item android:icon="@drawable/ic_done_white_24dp" android:id="@+id/action_selectnone" android:title=" 全不选学生" app:showAsAction="never|always|withText" />
+    <item android:icon="@drawable/ic_done_all_white_24dp" android:id="@+id/action_yes" android:title=" 追加发题" app:showAsAction="never|always|withText" />
+    <item android:icon="@drawable/ic_done_white_24dp" android:id="@+id/action_newsubmit" android:title=" 发新题" app:showAsAction="never|always|withText" />
+    <item android:icon="@drawable/ic_close_white_24dp" android:id="@+id/action_no" android:title=" 取消" app:showAsAction="never|always|withText" />
+</menu>

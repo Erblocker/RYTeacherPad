@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.netspace.library.controls.HorizontalListView android:id="@+id/studentAnswerView" android:layout_width="match_parent" android:layout_height="300dp" />
+    <RelativeLayout android:id="@+id/relativeLayoutPlayPos" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="50dp">
+        <SeekBar android:id="@+id/seekBarPosition" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="false" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewTimePass" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textViewTimeRemain" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="59:59:59" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linelayoutControls" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <ImageButton android:id="@+id/buttonPlay" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+        <ImageButton android:id="@+id/buttonStop" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+        <ImageButton android:id="@+id/buttonPrev" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+        <ImageButton android:id="@+id/buttonNext" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+        <ImageButton android:id="@+id/buttonZoomin" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+        <ImageButton android:id="@+id/buttonZoomout" android:background="@drawable/background_popupwindowbutton_click_with_rectangle_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playing" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="horizontal" android:id="@+id/LayoutTitle" android:background="?attr/toolbar_background" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="?attr/toolbar_textcolor" android:id="@+id/TextViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large Text" />
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="?attr/toolbar_textcolor" android:id="@+id/TextViewSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+    </LinearLayout>
+</LinearLayout>

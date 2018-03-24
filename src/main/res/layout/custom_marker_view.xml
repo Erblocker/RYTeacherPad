@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:background="@drawable/marker2" android:layout_width="wrap_content" android:layout_height="40dp">
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12dp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="7dp" android:layout_marginRight="5dp" android:text="" android:singleLine="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

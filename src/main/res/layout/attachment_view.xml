@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/ux_bg_color_toolbar_light" android:layout_width="match_parent" android:layout_height="@dimen/ux_toolbar_height_phone">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/attachment_view_topbar_ly" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ux_horz_left_margin_phone" android:layout_marginRight="@dimen/ux_horz_right_margin_phone">
+            <ImageView android:id="@+id/attachment_view_topbar_back" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/rd_reflow_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ux_text_height_title" android:textColor="@color/ux_text_color_title_dark" android:ellipsize="middle" android:id="@+id/attachment_view_topbar_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rv_panel_title_attachment" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/ux_color_shadow_solid_line" android:layout_width="match_parent" android:layout_height="1dp" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/attachment_view_content_ly" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

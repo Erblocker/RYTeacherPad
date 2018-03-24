@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#ccffffff" />
+            <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="24dp" />
+            <stroke android:width="6dp" android:color="#ff0066ff" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#ccffffff" />
+            <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="24dp" />
+            <stroke android:width="6dp" android:color="#ff0066ff" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ccffffff" />
+            <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="24dp" />
+            <stroke android:width="2dp" android:color="#ff0066ff" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+</selector>

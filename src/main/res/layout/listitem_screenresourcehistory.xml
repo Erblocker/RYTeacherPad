@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netspace.library.ui.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:app1="http://schemas.android.com/apk/res/com.netspace.teacherpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/RelativeLayout3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewLargeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/ImageViewWindowState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_star_light" android:layout_toRightOf="@+id/textViewLargeTitle" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/kpParent" android:paddingTop="3dp" android:paddingRight="16dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageViewThumbnail" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_placehold" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.9">
+                <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/TextViewTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="MyTest" android:maxLines="1" android:singleLine="true" android:layout_weight="0.9" />
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:ellipsize="end" android:id="@+id/textViewDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="MyTest" android:maxLines="1" android:singleLine="true" android:layout_weight="0.9" />
+            </LinearLayout>
+            <ImageView android:id="@+id/ImageViewState" android:background="@drawable/background_screensidebar_circle_button_click_with_circle_border" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_star_light" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.netspace.library.ui.CheckableFrameLayout>
